@@ -1,0 +1,49 @@
+.container {
+  width: 620px;
+  background-color: var(--dark-700);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h2 {
+    margin: 1rem 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  select {
+    margin-top: 1.5rem;
+    background-color: rgba(0, 0, 0, 40%);
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    color: var(--white);
+  }
+
+  input {
+    margin-top: 1.5rem;
+    background-color: rgba(0, 0, 0, 40%);
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    color: var(--white);
+
+    &:not(:first-of-type) {
+      margin-left: 1.5rem;
+    }
+  }
+
+  button {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
